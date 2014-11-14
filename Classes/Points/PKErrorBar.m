@@ -78,6 +78,23 @@
     _capLayer = [CAShapeLayer layer];
     [self.layer addSublayer:_capLayer];
     
+    //Disable automatic animations
+    NSDictionary *newActions = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNull null], @"onOrderIn",
+                                [NSNull null], @"onOrderOut",
+                                [NSNull null], @"sublayers",
+                                [NSNull null], @"contents",
+                                [NSNull null], @"bounds",
+                                [NSNull null], @"frame",
+                                [NSNull null], @"position",
+                                [NSNull null], @"size",
+                                [NSNull null], @"backgroundColor",
+                                [NSNull null], @"fillColor",
+                                [NSNull null], @"path",
+                                nil];
+    _barLayer.actions = newActions;
+    _capLayer.actions = newActions;
+    self.layer.actions = newActions;
+    
     //Use self calls to help finish setting up.
     _errorBarColor = [UIColor colorWithRed:0.35 green:0.49 blue:0.9 alpha:1];
     
@@ -133,7 +150,7 @@
 {
     //Are we displaying a cap?
     if (_endCapType == PKErrorBarEndCapTypeNone) {
-        return;
+        _capLayer.path = nil;
     }
     
     UIBezierPath *cap = [[UIBezierPath alloc] init];
@@ -173,7 +190,10 @@
     
     CGFloat capHeight = [self capHeight];
     _capLayer.frame = CGRectMake(0, 0, self.frame.size.width, capHeight);
-    _barLayer.frame = CGRectMake((self.frame.size.width - _lineWidth) / 2.0, capHeight, _lineWidth, self.frame.size.height - capHeight);
+    
+    //Adjust the bar for the cap
+    CGFloat barAdjustment = - (capHeight / 2.0);
+    _barLayer.frame = CGRectMake((self.frame.size.width - _lineWidth) / 2.0, capHeight + barAdjustment, _lineWidth, self.frame.size.height - capHeight - barAdjustment);
     
 }
 

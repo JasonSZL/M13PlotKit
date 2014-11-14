@@ -103,7 +103,7 @@
                                     <constraint firstAttribute="height" constant="30" id="ONR-F8-Ds9"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="updateLineWidth:" destination="Eih-4k-an4" eventType="touchUpInside" id="9DL-vh-7yo"/>
+                                    <action selector="updateLineWidth:" destination="Eih-4k-an4" eventType="valueChanged" id="2GL-wd-Hxk"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change line width:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJU-ya-rxy">

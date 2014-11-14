@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1BA4F737-F439-47FC-8EDA-609DE185C548</string>
+	<key>IDESourceControlProjectName</key>
+	<string>M13PlotKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C449E68348604A843C1708ACA8F65F590B245CFD</key>
+		<string>https://github.com/Marxon13/M13PlotKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>M13PlotKit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C449E68348604A843C1708ACA8F65F590B245CFD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Marxon13/M13PlotKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C449E68348604A843C1708ACA8F65F590B245CFD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C449E68348604A843C1708ACA8F65F590B245CFD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>M13PlotKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
