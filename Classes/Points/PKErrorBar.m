@@ -105,13 +105,13 @@
     if (_endCapType == PKErrorBarEndCapTypeLine) {
         capHeight = _lineWidth;
     } else if (_endCapType == PKErrorBarEndCapTypeTriangle) {
-        capHeight = (sqrtf(3.0) / 2.0) * self.frame.size.width;
+        capHeight = (sqrtf(3.0) / 2.0) * self.bounds.size.width;
     } else if (_endCapType == PKErrorBarEndCapTypeSquare) {
-        capHeight = self.frame.size.width;
+        capHeight = self.bounds.size.width;
     } else if (_endCapType == PKErrorBarEndCapTypeSemiCircle) {
-        capHeight = self.frame.size.width / 2.0;
+        capHeight = self.bounds.size.width / 2.0;
     } else if (_endCapType == PKErrorBarEndCapTypeCircle) {
-        capHeight = self.frame.size.width;
+        capHeight = self.bounds.size.width;
     }
     return capHeight;
 }
@@ -145,21 +145,21 @@
     
     //Run through each of the types and create the path.
     if (_endCapType == PKErrorBarEndCapTypeLine) {
-        cap = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.frame.size.width, _lineWidth)];
+        cap = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.bounds.size.width, _lineWidth)];
     } else if (_endCapType == PKErrorBarEndCapTypeTriangle) {
         CGFloat capHeight = [self capHeight];
-        [cap moveToPoint:CGPointMake(self.frame.size.width / 2.0, 0)];
-        [cap addLineToPoint:CGPointMake(self.frame.size.width, capHeight)];
+        [cap moveToPoint:CGPointMake(self.bounds.size.width / 2.0, 0)];
+        [cap addLineToPoint:CGPointMake(self.bounds.size.width, capHeight)];
         [cap addLineToPoint:CGPointMake(0, capHeight)];
         [cap closePath];
     } else if (_endCapType == PKErrorBarEndCapTypeSquare) {
-        cap = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.width)];
+        cap = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.width)];
     } else if (_endCapType == PKErrorBarEndCapTypeSemiCircle) {
         CGFloat capHeight = [self capHeight];
-        cap = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width / 2.0, capHeight) radius:(self.frame.size.width / 2.0) startAngle:0 endAngle:M_PI clockwise:false];
+        cap = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.bounds.size.width / 2.0, capHeight) radius:(self.bounds.size.width / 2.0) startAngle:0 endAngle:M_PI clockwise:false];
         [cap closePath];
     } else if (_endCapType == PKErrorBarEndCapTypeCircle) {
-        cap = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.width)];
+        cap = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.width)];
     }
     
     //Set the path
@@ -171,17 +171,17 @@
     [super layoutSubviews];
     
     //Update the cap if need be.
-    if (previousWidth != self.frame.size.width) {
+    if (previousWidth != self.bounds.size.width) {
         [self updateCap];
-        previousWidth = self.frame.size.width;
+        previousWidth = self.bounds.size.width;
     }
     
     CGFloat capHeight = [self capHeight];
-    _capLayer.frame = CGRectMake(0, 0, self.frame.size.width, capHeight);
+    _capLayer.frame = CGRectMake(0, 0, self.bounds.size.width, capHeight);
     
     //Adjust the bar for the cap
     CGFloat barAdjustment = - (capHeight / 2.0);
-    _barLayer.frame = CGRectMake((self.frame.size.width - _lineWidth) / 2.0, capHeight + barAdjustment, _lineWidth, self.frame.size.height - capHeight - barAdjustment);
+    _barLayer.frame = CGRectMake((self.bounds.size.width - _lineWidth) / 2.0, capHeight + barAdjustment, _lineWidth, self.bounds.size.height - capHeight - barAdjustment);
     
 }
 
