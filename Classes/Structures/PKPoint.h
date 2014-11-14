@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PKNumber.h"
+@class PKNumber;
 
 /**The base point object for PlotKit.*/
 @interface PKPoint : NSObject <NSCoding, NSCopying>
