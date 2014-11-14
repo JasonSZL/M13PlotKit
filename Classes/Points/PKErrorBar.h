@@ -21,18 +21,18 @@ typedef NS_ENUM(NSInteger, PKErrorBarEndCapType) {
 
 /**An error bar that is displaied in conjunction with data points on a plot.*/
 IB_DESIGNABLE
-@interface PKErrorBar : UIView <NSCoding, NSCopying>
+@interface PKErrorBar : UIView <NSCopying>
 
 /**@name Appearance*/
 
 /**The shape of the end cap to display on the error bar.*/
-/**Enums should be supported in IB, for some reason they are not.*/
+//Enums should be supported in IB, for some reason they are not.
 @property (nonatomic, assign) IBInspectable PKErrorBarEndCapType endCapType;
 
 /**The width of the lines in the error bar.*/
 @property (nonatomic, assign) IBInspectable CGFloat lineWidth;
 
-/**The color of the positive error bar.*/
+/**The color of the error bar.*/
 @property (nonatomic, strong) IBInspectable UIColor *errorBarColor;
 
 @end

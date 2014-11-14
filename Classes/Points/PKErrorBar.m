@@ -9,10 +9,6 @@
 #import "PKErrorBar.h"
 #import <CoreGraphics/CoreGraphics.h>
 
-#define kEndCapTypeKey @"EndCap"
-#define kLineWidthKey @"LineWidth"
-#define kBarColorKey @"BarColor"
-
 @interface PKErrorBar ()
 
 //Use CALayers instead of drawRect:, it can cashe.
@@ -61,14 +57,6 @@
     bar.lineWidth = _lineWidth;
     bar.errorBarColor = _errorBarColor;
     return bar;
-}
-
-- (void)encodeWithCoder:(NSCoder *)aCoder
-{
-    [super encodeWithCoder:aCoder];
-    [aCoder encodeInteger:_endCapType forKey:kEndCapTypeKey];
-    [aCoder encodeFloat:_lineWidth forKey:kLineWidthKey];
-    [aCoder encodeObject:_errorBarColor forKey:kBarColorKey];
 }
 
 - (void)setup
