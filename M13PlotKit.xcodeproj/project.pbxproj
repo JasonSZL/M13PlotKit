@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		CA1B3FF41A13F8C6005CAC24 /* PKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B3FF31A13F8C6005CAC24 /* PKPoint.m */; };
 		CA1B3FF81A13F971005CAC24 /* PKNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B3FF71A13F971005CAC24 /* PKNumber.m */; };
-		CA1B3FFB1A144711005CAC24 /* PKShapeMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B3FFA1A144711005CAC24 /* PKShapeMarker.m */; };
 		CA1B3FFE1A1452A1005CAC24 /* PKErrorBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B3FFD1A1452A1005CAC24 /* PKErrorBar.m */; };
 		CA1B40021A157BD7005CAC24 /* ErrorBarSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */; };
-		CA3E6C1B1A12DA4A000D2A2D /* PKPointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3E6C1A1A12DA4A000D2A2D /* PKPointMarker.m */; };
 		CA3E6C1E1A12DFF7000D2A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E6C1D1A12DFF7000D2A2D /* Foundation.framework */; };
 		CA3E6C201A12E001000D2A2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E6C1F1A12E001000D2A2D /* CoreGraphics.framework */; };
+		CA67DEA71A1650B800DC7C33 /* PKErrorBarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */; };
+		CA67DEAA1A165D5700DC7C33 /* ErrorBarGroupSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */; };
 		CA9C83291A12AE9C007A116E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C83281A12AE9C007A116E /* main.m */; };
 		CA9C832C1A12AE9C007A116E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C832B1A12AE9C007A116E /* AppDelegate.m */; };
 		CA9C83321A12AE9C007A116E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9C83301A12AE9C007A116E /* Main.storyboard */; };
@@ -38,16 +38,16 @@
 		CA1B3FF31A13F8C6005CAC24 /* PKPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKPoint.m; path = Classes/Structures/PKPoint.m; sourceTree = SOURCE_ROOT; };
 		CA1B3FF61A13F971005CAC24 /* PKNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKNumber.h; path = Classes/Structures/PKNumber.h; sourceTree = SOURCE_ROOT; };
 		CA1B3FF71A13F971005CAC24 /* PKNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKNumber.m; path = Classes/Structures/PKNumber.m; sourceTree = SOURCE_ROOT; };
-		CA1B3FF91A144711005CAC24 /* PKShapeMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKShapeMarker.h; path = Classes/Points/PKShapeMarker.h; sourceTree = SOURCE_ROOT; };
-		CA1B3FFA1A144711005CAC24 /* PKShapeMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKShapeMarker.m; path = Classes/Points/PKShapeMarker.m; sourceTree = SOURCE_ROOT; };
 		CA1B3FFC1A1452A1005CAC24 /* PKErrorBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKErrorBar.h; path = Classes/Points/PKErrorBar.h; sourceTree = SOURCE_ROOT; };
 		CA1B3FFD1A1452A1005CAC24 /* PKErrorBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKErrorBar.m; path = Classes/Points/PKErrorBar.m; sourceTree = SOURCE_ROOT; };
 		CA1B40001A157BD7005CAC24 /* ErrorBarSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBarSample.h; sourceTree = "<group>"; };
 		CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBarSample.m; sourceTree = "<group>"; };
-		CA3E6C191A12DA4A000D2A2D /* PKPointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKPointMarker.h; path = ../Classes/Points/PKPointMarker.h; sourceTree = "<group>"; };
-		CA3E6C1A1A12DA4A000D2A2D /* PKPointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKPointMarker.m; path = ../Classes/Points/PKPointMarker.m; sourceTree = "<group>"; };
 		CA3E6C1D1A12DFF7000D2A2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA3E6C1F1A12E001000D2A2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA67DEA51A1650B800DC7C33 /* PKErrorBarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKErrorBarGroup.h; path = Classes/Points/PKErrorBarGroup.h; sourceTree = SOURCE_ROOT; };
+		CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKErrorBarGroup.m; path = Classes/Points/PKErrorBarGroup.m; sourceTree = SOURCE_ROOT; };
+		CA67DEA81A165D5700DC7C33 /* ErrorBarGroupSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBarGroupSample.h; sourceTree = "<group>"; };
+		CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBarGroupSample.m; sourceTree = "<group>"; };
 		CA9C83231A12AE9C007A116E /* M13PlotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M13PlotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9C83271A12AE9C007A116E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9C83281A12AE9C007A116E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +97,8 @@
 			children = (
 				CA1B40001A157BD7005CAC24 /* ErrorBarSample.h */,
 				CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */,
+				CA67DEA81A165D5700DC7C33 /* ErrorBarGroupSample.h */,
+				CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -115,10 +117,8 @@
 			children = (
 				CA1B3FFC1A1452A1005CAC24 /* PKErrorBar.h */,
 				CA1B3FFD1A1452A1005CAC24 /* PKErrorBar.m */,
-				CA3E6C191A12DA4A000D2A2D /* PKPointMarker.h */,
-				CA3E6C1A1A12DA4A000D2A2D /* PKPointMarker.m */,
-				CA1B3FF91A144711005CAC24 /* PKShapeMarker.h */,
-				CA1B3FFA1A144711005CAC24 /* PKShapeMarker.m */,
+				CA67DEA51A1650B800DC7C33 /* PKErrorBarGroup.h */,
+				CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */,
 			);
 			name = Points;
 			sourceTree = "<group>";
@@ -295,10 +295,10 @@
 			files = (
 				CA1B3FF41A13F8C6005CAC24 /* PKPoint.m in Sources */,
 				CA1B3FFE1A1452A1005CAC24 /* PKErrorBar.m in Sources */,
-				CA3E6C1B1A12DA4A000D2A2D /* PKPointMarker.m in Sources */,
 				CA9C832C1A12AE9C007A116E /* AppDelegate.m in Sources */,
 				CA1B40021A157BD7005CAC24 /* ErrorBarSample.m in Sources */,
-				CA1B3FFB1A144711005CAC24 /* PKShapeMarker.m in Sources */,
+				CA67DEAA1A165D5700DC7C33 /* ErrorBarGroupSample.m in Sources */,
+				CA67DEA71A1650B800DC7C33 /* PKErrorBarGroup.m in Sources */,
 				CA9C83291A12AE9C007A116E /* main.m in Sources */,
 				CA1B3FF81A13F971005CAC24 /* PKNumber.m in Sources */,
 			);
