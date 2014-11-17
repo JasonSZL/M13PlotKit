@@ -8,7 +8,7 @@
 
 #import "PKPointMarker.h"
 
-/**The available shapes to display as a data point.*/
+/**Marks a point with a vector shape.*/
 typedef NS_ENUM(NSUInteger, PKShapePointMarkerShape) {
     //Regular Shapes
     PKShapePointMarkerShapeCircle,
