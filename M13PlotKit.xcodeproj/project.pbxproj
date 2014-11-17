@@ -13,8 +13,13 @@
 		CA1B40021A157BD7005CAC24 /* ErrorBarSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */; };
 		CA3E6C1E1A12DFF7000D2A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E6C1D1A12DFF7000D2A2D /* Foundation.framework */; };
 		CA3E6C201A12E001000D2A2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E6C1F1A12E001000D2A2D /* CoreGraphics.framework */; };
+		CA4F8F551A193AB500B94E8A /* UIBezierPath+Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4F8F541A193AB500B94E8A /* UIBezierPath+Shapes.m */; };
 		CA67DEA71A1650B800DC7C33 /* PKErrorBarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */; };
 		CA67DEAA1A165D5700DC7C33 /* ErrorBarGroupSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */; };
+		CA7560651A17BD0800E87520 /* PKPointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7560641A17BD0800E87520 /* PKPointMarker.m */; };
+		CA7560681A17BE3D00E87520 /* PKShapePointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7560671A17BE3D00E87520 /* PKShapePointMarker.m */; };
+		CA75606D1A181F7400E87520 /* UIBezierPath+Polygon.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75606C1A181F7400E87520 /* UIBezierPath+Polygon.m */; };
+		CA8FCD4F1A1A8CBF007A4D95 /* ShapePointMarkerSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8FCD4E1A1A8CBF007A4D95 /* ShapePointMarkerSample.m */; };
 		CA9C83291A12AE9C007A116E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C83281A12AE9C007A116E /* main.m */; };
 		CA9C832C1A12AE9C007A116E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C832B1A12AE9C007A116E /* AppDelegate.m */; };
 		CA9C83321A12AE9C007A116E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9C83301A12AE9C007A116E /* Main.storyboard */; };
@@ -44,10 +49,20 @@
 		CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBarSample.m; sourceTree = "<group>"; };
 		CA3E6C1D1A12DFF7000D2A2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA3E6C1F1A12E001000D2A2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA4F8F531A193AB500B94E8A /* UIBezierPath+Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+Shapes.h"; path = "Classes/Categories/UIBezierPath+Shapes.h"; sourceTree = SOURCE_ROOT; };
+		CA4F8F541A193AB500B94E8A /* UIBezierPath+Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+Shapes.m"; path = "Classes/Categories/UIBezierPath+Shapes.m"; sourceTree = SOURCE_ROOT; };
 		CA67DEA51A1650B800DC7C33 /* PKErrorBarGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKErrorBarGroup.h; path = Classes/Points/PKErrorBarGroup.h; sourceTree = SOURCE_ROOT; };
 		CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKErrorBarGroup.m; path = Classes/Points/PKErrorBarGroup.m; sourceTree = SOURCE_ROOT; };
 		CA67DEA81A165D5700DC7C33 /* ErrorBarGroupSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorBarGroupSample.h; sourceTree = "<group>"; };
 		CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorBarGroupSample.m; sourceTree = "<group>"; };
+		CA7560631A17BD0800E87520 /* PKPointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKPointMarker.h; path = Classes/Points/PKPointMarker.h; sourceTree = SOURCE_ROOT; };
+		CA7560641A17BD0800E87520 /* PKPointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKPointMarker.m; path = Classes/Points/PKPointMarker.m; sourceTree = SOURCE_ROOT; };
+		CA7560661A17BE3D00E87520 /* PKShapePointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKShapePointMarker.h; path = Classes/Points/PKShapePointMarker.h; sourceTree = SOURCE_ROOT; };
+		CA7560671A17BE3D00E87520 /* PKShapePointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKShapePointMarker.m; path = Classes/Points/PKShapePointMarker.m; sourceTree = SOURCE_ROOT; };
+		CA75606B1A181F7400E87520 /* UIBezierPath+Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+Polygon.h"; path = "Classes/Categories/UIBezierPath+Polygon.h"; sourceTree = SOURCE_ROOT; };
+		CA75606C1A181F7400E87520 /* UIBezierPath+Polygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+Polygon.m"; path = "Classes/Categories/UIBezierPath+Polygon.m"; sourceTree = SOURCE_ROOT; };
+		CA8FCD4D1A1A8CBF007A4D95 /* ShapePointMarkerSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapePointMarkerSample.h; sourceTree = "<group>"; };
+		CA8FCD4E1A1A8CBF007A4D95 /* ShapePointMarkerSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapePointMarkerSample.m; sourceTree = "<group>"; };
 		CA9C83231A12AE9C007A116E /* M13PlotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M13PlotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9C83271A12AE9C007A116E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9C83281A12AE9C007A116E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +114,8 @@
 				CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */,
 				CA67DEA81A165D5700DC7C33 /* ErrorBarGroupSample.h */,
 				CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */,
+				CA8FCD4D1A1A8CBF007A4D95 /* ShapePointMarkerSample.h */,
+				CA8FCD4E1A1A8CBF007A4D95 /* ShapePointMarkerSample.m */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -106,6 +123,7 @@
 		CA3E6C141A12D9D2000D2A2D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CA7560691A181F0900E87520 /* Categories */,
 				CA1B3FF51A13F8D4005CAC24 /* Structures */,
 				CA3E6C151A12D9E4000D2A2D /* Points */,
 			);
@@ -119,6 +137,10 @@
 				CA1B3FFD1A1452A1005CAC24 /* PKErrorBar.m */,
 				CA67DEA51A1650B800DC7C33 /* PKErrorBarGroup.h */,
 				CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */,
+				CA7560631A17BD0800E87520 /* PKPointMarker.h */,
+				CA7560641A17BD0800E87520 /* PKPointMarker.m */,
+				CA7560661A17BE3D00E87520 /* PKShapePointMarker.h */,
+				CA7560671A17BE3D00E87520 /* PKShapePointMarker.m */,
 			);
 			name = Points;
 			sourceTree = "<group>";
@@ -131,6 +153,25 @@
 			);
 			name = Frameworks;
 			path = M13PlotKit;
+			sourceTree = "<group>";
+		};
+		CA7560691A181F0900E87520 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CA75606A1A181F1100E87520 /* UIBezierPath */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CA75606A1A181F1100E87520 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				CA75606B1A181F7400E87520 /* UIBezierPath+Polygon.h */,
+				CA75606C1A181F7400E87520 /* UIBezierPath+Polygon.m */,
+				CA4F8F531A193AB500B94E8A /* UIBezierPath+Shapes.h */,
+				CA4F8F541A193AB500B94E8A /* UIBezierPath+Shapes.m */,
+			);
+			name = UIBezierPath;
 			sourceTree = "<group>";
 		};
 		CA9C831A1A12AE9B007A116E = {
@@ -295,9 +336,14 @@
 			files = (
 				CA1B3FF41A13F8C6005CAC24 /* PKPoint.m in Sources */,
 				CA1B3FFE1A1452A1005CAC24 /* PKErrorBar.m in Sources */,
+				CA7560651A17BD0800E87520 /* PKPointMarker.m in Sources */,
+				CA4F8F551A193AB500B94E8A /* UIBezierPath+Shapes.m in Sources */,
 				CA9C832C1A12AE9C007A116E /* AppDelegate.m in Sources */,
+				CA75606D1A181F7400E87520 /* UIBezierPath+Polygon.m in Sources */,
 				CA1B40021A157BD7005CAC24 /* ErrorBarSample.m in Sources */,
+				CA7560681A17BE3D00E87520 /* PKShapePointMarker.m in Sources */,
 				CA67DEAA1A165D5700DC7C33 /* ErrorBarGroupSample.m in Sources */,
+				CA8FCD4F1A1A8CBF007A4D95 /* ShapePointMarkerSample.m in Sources */,
 				CA67DEA71A1650B800DC7C33 /* PKErrorBarGroup.m in Sources */,
 				CA9C83291A12AE9C007A116E /* main.m in Sources */,
 				CA1B3FF81A13F971005CAC24 /* PKNumber.m in Sources */,

@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="Points" id="Pl6-K1-TU7">
+                            <tableViewSection headerTitle="Error Bars" id="Pl6-K1-TU7">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="8QQ-Wn-vX9" style="IBUITableViewCellStyleDefault" id="6g4-UQ-vSJ">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -48,6 +48,27 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="DDP-rb-3ij" kind="show" id="K9y-tD-zOg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Point Markers" id="vs8-Vc-HfB">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="O4G-AP-yNp" style="IBUITableViewCellStyleDefault" id="K0t-TE-EDk">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K0t-TE-EDk" id="1rS-eg-oZq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shape" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O4G-AP-yNp">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WIp-T0-Eog" kind="show" id="ZXE-9P-o2O"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -446,6 +467,142 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxl-zp-BYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2126" y="422"/>
+        </scene>
+        <!--Shape Point Marker-->
+        <scene sceneID="BZ1-Ox-JOi">
+            <objects>
+                <viewController id="WIp-T0-Eog" customClass="ShapePointMarkerSample" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EgE-P3-yVN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hw0-Ba-K1h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yas-5Z-WtX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KtX-oh-kHT">
+                                <rect key="frame" x="51" y="549" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeFill:" destination="WIp-T0-Eog" eventType="valueChanged" id="sbr-0u-Ik1"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7z-Cg-v8i">
+                                <rect key="frame" x="16" y="554" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8VZ-Oj-U1y" customClass="PKShapePointMarker">
+                                <rect key="frame" x="16" y="72" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0aA-jQ-95Z"/>
+                                    <constraint firstAttribute="height" constant="60" id="uLB-Sl-pBY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndf-j2-kaR" customClass="PKShapePointMarker">
+                                <rect key="frame" x="84" y="72" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="388-gE-2AL"/>
+                                    <constraint firstAttribute="width" constant="60" id="9c3-du-cXo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIK-mI-eTD" customClass="PKShapePointMarker">
+                                <rect key="frame" x="152" y="72" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="D3Q-rh-iaX"/>
+                                    <constraint firstAttribute="height" constant="60" id="vbA-qd-kmd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvK-ze-rym" customClass="PKShapePointMarker">
+                                <rect key="frame" x="16" y="140" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7e0-LV-dZi"/>
+                                    <constraint firstAttribute="width" constant="60" id="dDy-vk-eBG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9B-5c-gIR" customClass="PKShapePointMarker">
+                                <rect key="frame" x="84" y="140" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LSL-ga-X8S"/>
+                                    <constraint firstAttribute="width" constant="60" id="SBB-Zy-rAz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1J-Hg-HEn" customClass="PKShapePointMarker">
+                                <rect key="frame" x="152" y="140" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="na1-Oj-64s"/>
+                                    <constraint firstAttribute="width" constant="60" id="vA1-NG-30I"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-Jf-5bI" customClass="PKShapePointMarker">
+                                <rect key="frame" x="16" y="208" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Uss-TE-B5X"/>
+                                    <constraint firstAttribute="height" constant="60" id="erM-Kh-0dI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIz-ok-7FR" customClass="PKShapePointMarker">
+                                <rect key="frame" x="84" y="208" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="82R-E7-dDf"/>
+                                    <constraint firstAttribute="width" constant="60" id="IvD-65-ezD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFE-cI-wKN" customClass="PKShapePointMarker">
+                                <rect key="frame" x="152" y="208" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="IWc-4h-f8Z"/>
+                                    <constraint firstAttribute="height" constant="60" id="WXQ-yY-J4I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qIz-ok-7FR" firstAttribute="top" secondItem="V9B-5c-gIR" secondAttribute="bottom" constant="8" id="1Zo-R1-ggo"/>
+                            <constraint firstItem="SIK-mI-eTD" firstAttribute="top" secondItem="EgE-P3-yVN" secondAttribute="bottom" constant="8" id="3TH-xj-G1g"/>
+                            <constraint firstItem="aFE-cI-wKN" firstAttribute="leading" secondItem="qIz-ok-7FR" secondAttribute="trailing" constant="8" id="7rk-5z-Qwa"/>
+                            <constraint firstItem="8VZ-Oj-U1y" firstAttribute="leading" secondItem="yas-5Z-WtX" secondAttribute="leadingMargin" id="Als-Sr-Art"/>
+                            <constraint firstItem="RvK-ze-rym" firstAttribute="top" secondItem="8VZ-Oj-U1y" secondAttribute="bottom" constant="8" id="EI3-GO-Zlr"/>
+                            <constraint firstItem="Ndf-j2-kaR" firstAttribute="leading" secondItem="8VZ-Oj-U1y" secondAttribute="trailing" constant="8" id="ELn-0a-xB5"/>
+                            <constraint firstItem="GZF-Jf-5bI" firstAttribute="top" secondItem="RvK-ze-rym" secondAttribute="bottom" constant="8" id="FdY-D9-dZt"/>
+                            <constraint firstItem="V9B-5c-gIR" firstAttribute="leading" secondItem="RvK-ze-rym" secondAttribute="trailing" constant="8" id="IfF-Uy-C7v"/>
+                            <constraint firstItem="aFE-cI-wKN" firstAttribute="top" secondItem="d1J-Hg-HEn" secondAttribute="bottom" constant="8" id="Kv6-u9-qLG"/>
+                            <constraint firstItem="RvK-ze-rym" firstAttribute="leading" secondItem="yas-5Z-WtX" secondAttribute="leadingMargin" id="L3B-2t-8ou"/>
+                            <constraint firstItem="d1J-Hg-HEn" firstAttribute="top" secondItem="SIK-mI-eTD" secondAttribute="bottom" constant="8" id="LiA-sG-wWi"/>
+                            <constraint firstItem="qIz-ok-7FR" firstAttribute="leading" secondItem="GZF-Jf-5bI" secondAttribute="trailing" constant="8" id="SBl-07-JvK"/>
+                            <constraint firstItem="V9B-5c-gIR" firstAttribute="top" secondItem="Ndf-j2-kaR" secondAttribute="bottom" constant="8" id="Tla-mt-maO"/>
+                            <constraint firstItem="Ndf-j2-kaR" firstAttribute="top" secondItem="EgE-P3-yVN" secondAttribute="bottom" constant="8" id="eEB-Sb-bkH"/>
+                            <constraint firstItem="GZF-Jf-5bI" firstAttribute="leading" secondItem="yas-5Z-WtX" secondAttribute="leadingMargin" id="gcP-h4-sWL"/>
+                            <constraint firstItem="SIK-mI-eTD" firstAttribute="leading" secondItem="Ndf-j2-kaR" secondAttribute="trailing" constant="8" id="psk-Kt-YRm"/>
+                            <constraint firstItem="8VZ-Oj-U1y" firstAttribute="top" secondItem="EgE-P3-yVN" secondAttribute="bottom" constant="8" id="qr6-JY-XTW"/>
+                            <constraint firstItem="d1J-Hg-HEn" firstAttribute="leading" secondItem="V9B-5c-gIR" secondAttribute="trailing" constant="8" id="vAa-gB-uAh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shape Point Marker" id="S8T-EL-3ol"/>
+                    <connections>
+                        <outlet property="circle" destination="8VZ-Oj-U1y" id="Lzc-Eh-WaO"/>
+                        <outlet property="diamond" destination="qIz-ok-7FR" id="pjk-iM-HCd"/>
+                        <outlet property="fivePointStar" destination="aFE-cI-wKN" id="vnm-F7-HzY"/>
+                        <outlet property="hexagon" destination="V9B-5c-gIR" id="Xrm-hb-o3y"/>
+                        <outlet property="octogon" destination="d1J-Hg-HEn" id="bRr-yK-Ixm"/>
+                        <outlet property="pentagon" destination="RvK-ze-rym" id="7z6-yD-BRw"/>
+                        <outlet property="regularDiamond" destination="GZF-Jf-5bI" id="L4d-af-dbr"/>
+                        <outlet property="square" destination="SIK-mI-eTD" id="XmS-XA-KNN"/>
+                        <outlet property="triangle" destination="Ndf-j2-kaR" id="CaU-6f-wOy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPk-mc-u9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qpP-KT-KUT">
