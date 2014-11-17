@@ -20,6 +20,9 @@
 		CA7560681A17BE3D00E87520 /* PKShapePointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7560671A17BE3D00E87520 /* PKShapePointMarker.m */; };
 		CA75606D1A181F7400E87520 /* UIBezierPath+Polygon.m in Sources */ = {isa = PBXBuildFile; fileRef = CA75606C1A181F7400E87520 /* UIBezierPath+Polygon.m */; };
 		CA8FCD4F1A1A8CBF007A4D95 /* ShapePointMarkerSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8FCD4E1A1A8CBF007A4D95 /* ShapePointMarkerSample.m */; };
+		CA8FCD531A1A9CB8007A4D95 /* PKImagePointMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8FCD521A1A9CB8007A4D95 /* PKImagePointMarker.m */; };
+		CA8FCD561A1A9F04007A4D95 /* ImagePointMarkerSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8FCD551A1A9F04007A4D95 /* ImagePointMarkerSample.m */; };
+		CA8FCD581A1AA039007A4D95 /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = CA8FCD571A1AA039007A4D95 /* target.png */; };
 		CA9C83291A12AE9C007A116E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C83281A12AE9C007A116E /* main.m */; };
 		CA9C832C1A12AE9C007A116E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C832B1A12AE9C007A116E /* AppDelegate.m */; };
 		CA9C83321A12AE9C007A116E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9C83301A12AE9C007A116E /* Main.storyboard */; };
@@ -63,6 +66,11 @@
 		CA75606C1A181F7400E87520 /* UIBezierPath+Polygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+Polygon.m"; path = "Classes/Categories/UIBezierPath+Polygon.m"; sourceTree = SOURCE_ROOT; };
 		CA8FCD4D1A1A8CBF007A4D95 /* ShapePointMarkerSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapePointMarkerSample.h; sourceTree = "<group>"; };
 		CA8FCD4E1A1A8CBF007A4D95 /* ShapePointMarkerSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapePointMarkerSample.m; sourceTree = "<group>"; };
+		CA8FCD511A1A9CB8007A4D95 /* PKImagePointMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKImagePointMarker.h; path = Classes/Points/PKImagePointMarker.h; sourceTree = SOURCE_ROOT; };
+		CA8FCD521A1A9CB8007A4D95 /* PKImagePointMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKImagePointMarker.m; path = Classes/Points/PKImagePointMarker.m; sourceTree = SOURCE_ROOT; };
+		CA8FCD541A1A9F04007A4D95 /* ImagePointMarkerSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePointMarkerSample.h; sourceTree = "<group>"; };
+		CA8FCD551A1A9F04007A4D95 /* ImagePointMarkerSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePointMarkerSample.m; sourceTree = "<group>"; };
+		CA8FCD571A1AA039007A4D95 /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = target.png; path = Images/target.png; sourceTree = "<group>"; };
 		CA9C83231A12AE9C007A116E /* M13PlotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M13PlotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9C83271A12AE9C007A116E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9C83281A12AE9C007A116E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,12 +118,15 @@
 		CA1B3FFF1A157BB8005CAC24 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				CA8FCD591A1AA040007A4D95 /* Images */,
 				CA1B40001A157BD7005CAC24 /* ErrorBarSample.h */,
 				CA1B40011A157BD7005CAC24 /* ErrorBarSample.m */,
 				CA67DEA81A165D5700DC7C33 /* ErrorBarGroupSample.h */,
 				CA67DEA91A165D5700DC7C33 /* ErrorBarGroupSample.m */,
 				CA8FCD4D1A1A8CBF007A4D95 /* ShapePointMarkerSample.h */,
 				CA8FCD4E1A1A8CBF007A4D95 /* ShapePointMarkerSample.m */,
+				CA8FCD541A1A9F04007A4D95 /* ImagePointMarkerSample.h */,
+				CA8FCD551A1A9F04007A4D95 /* ImagePointMarkerSample.m */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -125,24 +136,21 @@
 			children = (
 				CA7560691A181F0900E87520 /* Categories */,
 				CA1B3FF51A13F8D4005CAC24 /* Structures */,
-				CA3E6C151A12D9E4000D2A2D /* Points */,
+				CA8FCD501A1A9C54007A4D95 /* Point Markers */,
+				CA3E6C151A12D9E4000D2A2D /* Error Bars */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		CA3E6C151A12D9E4000D2A2D /* Points */ = {
+		CA3E6C151A12D9E4000D2A2D /* Error Bars */ = {
 			isa = PBXGroup;
 			children = (
 				CA1B3FFC1A1452A1005CAC24 /* PKErrorBar.h */,
 				CA1B3FFD1A1452A1005CAC24 /* PKErrorBar.m */,
 				CA67DEA51A1650B800DC7C33 /* PKErrorBarGroup.h */,
 				CA67DEA61A1650B800DC7C33 /* PKErrorBarGroup.m */,
-				CA7560631A17BD0800E87520 /* PKPointMarker.h */,
-				CA7560641A17BD0800E87520 /* PKPointMarker.m */,
-				CA7560661A17BE3D00E87520 /* PKShapePointMarker.h */,
-				CA7560671A17BE3D00E87520 /* PKShapePointMarker.m */,
 			);
-			name = Points;
+			name = "Error Bars";
 			sourceTree = "<group>";
 		};
 		CA3E6C211A12E009000D2A2D /* Frameworks */ = {
@@ -172,6 +180,27 @@
 				CA4F8F541A193AB500B94E8A /* UIBezierPath+Shapes.m */,
 			);
 			name = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		CA8FCD501A1A9C54007A4D95 /* Point Markers */ = {
+			isa = PBXGroup;
+			children = (
+				CA7560631A17BD0800E87520 /* PKPointMarker.h */,
+				CA7560641A17BD0800E87520 /* PKPointMarker.m */,
+				CA7560661A17BE3D00E87520 /* PKShapePointMarker.h */,
+				CA7560671A17BE3D00E87520 /* PKShapePointMarker.m */,
+				CA8FCD511A1A9CB8007A4D95 /* PKImagePointMarker.h */,
+				CA8FCD521A1A9CB8007A4D95 /* PKImagePointMarker.m */,
+			);
+			name = "Point Markers";
+			sourceTree = "<group>";
+		};
+		CA8FCD591A1AA040007A4D95 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA8FCD571A1AA039007A4D95 /* target.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		CA9C831A1A12AE9B007A116E = {
@@ -314,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA8FCD581A1AA039007A4D95 /* target.png in Resources */,
 				CA9C83321A12AE9C007A116E /* Main.storyboard in Resources */,
 				CA9C83371A12AE9C007A116E /* LaunchScreen.xib in Resources */,
 				CA9C83341A12AE9C007A116E /* Images.xcassets in Resources */,
@@ -337,6 +367,7 @@
 				CA1B3FF41A13F8C6005CAC24 /* PKPoint.m in Sources */,
 				CA1B3FFE1A1452A1005CAC24 /* PKErrorBar.m in Sources */,
 				CA7560651A17BD0800E87520 /* PKPointMarker.m in Sources */,
+				CA8FCD561A1A9F04007A4D95 /* ImagePointMarkerSample.m in Sources */,
 				CA4F8F551A193AB500B94E8A /* UIBezierPath+Shapes.m in Sources */,
 				CA9C832C1A12AE9C007A116E /* AppDelegate.m in Sources */,
 				CA75606D1A181F7400E87520 /* UIBezierPath+Polygon.m in Sources */,
@@ -347,6 +378,7 @@
 				CA67DEA71A1650B800DC7C33 /* PKErrorBarGroup.m in Sources */,
 				CA9C83291A12AE9C007A116E /* main.m in Sources */,
 				CA1B3FF81A13F971005CAC24 /* PKNumber.m in Sources */,
+				CA8FCD531A1A9CB8007A4D95 /* PKImagePointMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
