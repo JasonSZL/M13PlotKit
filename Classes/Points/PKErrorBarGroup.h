@@ -19,7 +19,7 @@ typedef NS_OPTIONS(NSInteger, PKErrorBarLocation) {
     PKErrorBarLocationNegativeY = 1 << 4,
 };
 
-/**Displays a group of error bars. Controls the layout of ± /xy bars.*/
+/**Displays a group of error bars. Controls the layout of ± /xy error bars.*/
 IB_DESIGNABLE
 @interface PKErrorBarGroup : UIView <NSCopying>
 
